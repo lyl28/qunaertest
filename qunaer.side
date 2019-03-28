@@ -1,0 +1,1491 @@
+{
+  "id": "f0385c2d-d076-4bdb-8a5d-52a0ba146ae7",
+  "version": "2.0",
+  "name": "qunaer",
+  "url": "https://www.qunar.com",
+  "tests": [{
+    "id": "bb2a9766-b220-4ee0-9fb8-632f12332188",
+    "name": "出发地与到达地不同时的城市搜索",
+    "commands": [{
+      "id": "c6a91c77-47b5-49f7-99dd-a7806240fc7b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62459fe0-a765-43a5-a0d1-4644e5f8499e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x910",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d0d7ce2-dc96-4733-bb84-a913740cfee4",
+      "comment": "",
+      "command": "click",
+      "target": "name=fromCity",
+      "targets": [
+        ["name=fromCity", "name"],
+        ["css=.controls:nth-child(2) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='fromCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff31f7d4-757a-4fbc-a083-a7d6baac50d3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=北京",
+      "targets": [
+        ["linkText=北京", "linkText"],
+        ["css=li:nth-child(2) > .js-hotcitylist", "css:finder"],
+        ["xpath=//a[contains(text(),'北京')]", "xpath:link"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/div[4]/div/div[2]/div[3]/dl/dd/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
+        ["xpath=//dd/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'北京')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a372346d-3cd8-4c28-a503-d4c396f403d3",
+      "comment": "",
+      "command": "click",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6ca8261-b913-4219-9bd2-f1418e40133d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=海口",
+      "targets": [
+        ["linkText=海口", "linkText"],
+        ["css=.m-hct-lst:nth-child(3) li:nth-child(9) > .js-hotcitylist", "css:finder"],
+        ["xpath=(//a[contains(text(),'海口')])[2]", "xpath:link"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/div[4]/div/div[2]/div[2]/dl/dd/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[45]", "xpath:href"],
+        ["xpath=//div[2]/dl/dd/ul/li[9]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7173941-ea1d-49f0-91c5-db698f9ea03c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.crl_group:nth-child(4) .button-search",
+      "targets": [
+        ["css=.crl_group:nth-child(4) .button-search", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[3]/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e13899b-c12a-4593-aca4-653b658ca959",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bf14d514-f9a8-486e-95e6-906487a80fe4",
+    "name": "出发地与到达地相同时",
+    "commands": [{
+      "id": "708ec4f6-d699-4189-9caa-6a00d44aef18",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7363c9f-750f-451f-ae6e-47650b8801bb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x910",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b1ce055-72a9-48e6-aac6-1010785a0bee",
+      "comment": "",
+      "command": "click",
+      "target": "name=fromCity",
+      "targets": [
+        ["name=fromCity", "name"],
+        ["css=.controls:nth-child(2) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='fromCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15bc67e0-bc50-44ab-a398-f3af0007dc7d",
+      "comment": "",
+      "command": "type",
+      "target": "name=fromCity",
+      "targets": [
+        ["name=fromCity", "name"],
+        ["css=.controls:nth-child(2) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='fromCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "深圳(SZX)"
+    }, {
+      "id": "29aa4139-a16f-4aa8-8c67-38dc3821b394",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.active > td",
+      "targets": [
+        ["css=.active > td", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div[2]/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'城市 深圳 SZX 中国')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dae4a1d-f3ba-4969-bb10-fe533982fddc",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=#js_flight_domestic_searchbox .crl_sp2_1",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox .crl_sp2_1", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6051379-9e82-4ab9-82ee-0e4500f01204",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_flight_domestic_searchbox .crl_sp2_1",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox .crl_sp2_1", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f4f988e-87d0-40bd-9917-548147cf7495",
+      "comment": "",
+      "command": "click",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47f49688-f3bf-42fc-8936-2b6736c695ea",
+      "comment": "",
+      "command": "type",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "深圳(SZX)"
+    }, {
+      "id": "1ab52744-ca3c-459c-8ced-5ee351b8a8d5",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.controls:nth-child(3) .active > td",
+      "targets": [
+        ["css=.controls:nth-child(3) .active > td", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div[2]/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/table/tbody/tr/td", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e25071b2-64a0-4153-8d6e-297cf240b2a3",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=#js_flight_domestic_searchbox .crl_sp2_1",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox .crl_sp2_1", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c8cf985-cf70-45a2-8b39-73c035420f78",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_flight_domestic_searchbox .crl_sp2_1",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox .crl_sp2_1", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c40c30c8-7226-45b0-9235-535b4472a0b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.crl_group:nth-child(4) .button-search",
+      "targets": [
+        ["css=.crl_group:nth-child(4) .button-search", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[3]/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c02bee9e-bf1e-46f2-ba05-b576b1ff1f27",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "080a1946-65c4-4b17-86de-c7f9be2acb99",
+    "name": "输入无效地点时",
+    "commands": [{
+      "id": "9c49090c-eb9b-4cff-b872-605f928b7d0c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "681d97db-e39e-46a6-abd6-6006c6daa3a6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x910",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec366c55-374b-42cb-8bf7-a44de4437446",
+      "comment": "",
+      "command": "click",
+      "target": "name=fromCity",
+      "targets": [
+        ["name=fromCity", "name"],
+        ["css=.controls:nth-child(2) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='fromCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e9ad2cb-ab67-4c17-a66f-224de2277f7d",
+      "comment": "",
+      "command": "type",
+      "target": "name=fromCity",
+      "targets": [
+        ["name=fromCity", "name"],
+        ["css=.controls:nth-child(2) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='fromCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "艾斯比哈不是茶"
+    }, {
+      "id": "83c2c510-2d5f-4d59-95ad-413b3670994e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.crl_group:nth-child(4) .button-search",
+      "targets": [
+        ["css=.crl_group:nth-child(4) .button-search", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[3]/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed8324a9-bbc3-442a-af2b-f246e2846c97",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f8694f63-a92c-44c5-9303-1fa5c872e829",
+    "name": "单程往返切换",
+    "commands": [{
+      "id": "2f8d46ad-c4e0-4984-8cd2-fd68a08038f2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b803e753-81ea-44c9-9e76-a986a2609735",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x910",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f39c2ac8-7b3c-4976-9c59-c5e8f572f694",
+      "comment": "",
+      "command": "click",
+      "target": "name=fromCity",
+      "targets": [
+        ["name=fromCity", "name"],
+        ["css=.controls:nth-child(2) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='fromCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "705b583f-2f02-4c50-9aac-88ad145bf999",
+      "comment": "",
+      "command": "type",
+      "target": "name=fromCity",
+      "targets": [
+        ["name=fromCity", "name"],
+        ["css=.controls:nth-child(2) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='fromCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0a16e84-a7e2-4f66-9011-a452bd6f50ad",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.controls:nth-child(3) .qcbox-prefix:nth-child(2)",
+      "targets": [
+        ["css=.controls:nth-child(3) .qcbox-prefix:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": "12,11"
+    }, {
+      "id": "696ab09d-62d3-412d-9a85-780240acaedd",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.controls:nth-child(3) .qcbox-prefix:nth-child(2)",
+      "targets": [
+        ["css=.controls:nth-child(3) .qcbox-prefix:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": "12,11"
+    }, {
+      "id": "43ac8a21-565f-48b6-947f-621040358699",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.controls:nth-child(3) .qcbox-prefix:nth-child(2)",
+      "targets": [
+        ["css=.controls:nth-child(3) .qcbox-prefix:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": "12,11"
+    }, {
+      "id": "4a52929e-5b6b-4619-a65e-7dcff4146041",
+      "comment": "",
+      "command": "click",
+      "target": "css=.crl_group:nth-child(3) .controls:nth-child(3) .qunar-qcbox",
+      "targets": [
+        ["css=.crl_group:nth-child(3) .controls:nth-child(3) .qunar-qcbox", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69878a2f-a5e4-44b4-a0fb-c122ba6299d6",
+      "comment": "",
+      "command": "click",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "103de4ed-09bf-4b72-83a1-31072ab1faec",
+      "comment": "",
+      "command": "type",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42160d2b-b063-4ac4-a9ef-5cf420826224",
+      "comment": "",
+      "command": "click",
+      "target": "id=js_searchtype_oneway",
+      "targets": [
+        ["id=js_searchtype_oneway", "id"],
+        ["name=searchType", "name"],
+        ["css=#js_searchtype_oneway", "css:finder"],
+        ["xpath=//input[@id='js_searchtype_oneway']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfa1ba81-b751-43ff-b1be-0c7bafbdb857",
+      "comment": "",
+      "command": "click",
+      "target": "id=js_searchtype_roundtrip",
+      "targets": [
+        ["id=js_searchtype_roundtrip", "id"],
+        ["css=#js_searchtype_roundtrip", "css:finder"],
+        ["xpath=//input[@id='js_searchtype_roundtrip']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div/div/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e04f098-7d7b-4c46-ac3e-df8f14dd9943",
+      "comment": "",
+      "command": "click",
+      "target": "id=js_searchtype_oneway",
+      "targets": [
+        ["id=js_searchtype_oneway", "id"],
+        ["name=searchType", "name"],
+        ["css=#js_searchtype_oneway", "css:finder"],
+        ["xpath=//input[@id='js_searchtype_oneway']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e4c017b-b9dc-4910-a12d-872f4002d0b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=js_searchtype_roundtrip",
+      "targets": [
+        ["id=js_searchtype_roundtrip", "id"],
+        ["css=#js_searchtype_roundtrip", "css:finder"],
+        ["xpath=//input[@id='js_searchtype_roundtrip']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div/div/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdd2b295-8282-449e-ae09-62c07a403b19",
+      "comment": "",
+      "command": "click",
+      "target": "id=js_searchtype_oneway",
+      "targets": [
+        ["id=js_searchtype_oneway", "id"],
+        ["name=searchType", "name"],
+        ["css=#js_searchtype_oneway", "css:finder"],
+        ["xpath=//input[@id='js_searchtype_oneway']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fbd2466-046a-45f4-b462-28dc57546afa",
+      "comment": "",
+      "command": "click",
+      "target": "id=js_searchtype_roundtrip",
+      "targets": [
+        ["id=js_searchtype_roundtrip", "id"],
+        ["css=#js_searchtype_roundtrip", "css:finder"],
+        ["xpath=//input[@id='js_searchtype_roundtrip']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div/div/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b20cd706-e827-43b2-af5d-4b835b6da8c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_flight_domestic_searchbox .lal_rdo:nth-child(2)",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox .lal_rdo:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,' 单程')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fa1b8a7-335f-44cb-a0f8-2dff8b5aa7d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_flight_domestic_searchbox .lal_rdo:nth-child(3)",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox .lal_rdo:nth-child(3)", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div/div/label[2]", "xpath:idRelative"],
+        ["xpath=//label[2]", "xpath:position"],
+        ["xpath=//label[contains(.,' 往返')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "828849a1-8f09-4946-aafd-bcc6d35f696b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fa840f8a-4b35-43df-9892-697c534633a7",
+    "name": "单程，输入有效出发地，有效到达地时",
+    "commands": [{
+      "id": "4a62d057-48b4-44b4-9031-b841655cd1d4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "009e97da-d1ea-4849-b3ce-3030da1d274f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x910",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9aac31c6-5270-466f-ac3c-f9a757293083",
+      "comment": "",
+      "command": "click",
+      "target": "id=js_searchtype_oneway",
+      "targets": [
+        ["id=js_searchtype_oneway", "id"],
+        ["name=searchType", "name"],
+        ["css=#js_searchtype_oneway", "css:finder"],
+        ["xpath=//input[@id='js_searchtype_oneway']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09a038ab-eeaf-4917-8909-764ee7778e43",
+      "comment": "",
+      "command": "type",
+      "target": "name=fromCity",
+      "targets": [
+        ["name=fromCity", "name"],
+        ["css=.controls:nth-child(2) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='fromCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "武汉(WUH)"
+    }, {
+      "id": "847c3e3c-3efe-4421-bf04-db194dc85c03",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_flight_domestic_searchbox .crl_sp2_1",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox .crl_sp2_1", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54aba0fa-3ef9-4cf7-815b-7ba467a27852",
+      "comment": "",
+      "command": "click",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6317b9b8-9633-4337-a684-7daa6d0892d6",
+      "comment": "",
+      "command": "type",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "厦门(XMN)"
+    }, {
+      "id": "589a2399-a11e-4272-ae62-b579c26126a1",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.controls:nth-child(3) .active > td",
+      "targets": [
+        ["css=.controls:nth-child(3) .active > td", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div[2]/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/table/tbody/tr/td", "xpath:position"],
+        ["xpath=//td[contains(.,'城市 厦门 XMN 中国')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1bc4cf3-cb0f-4e55-93ab-8f8fb269f249",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=#js_flight_domestic_searchbox .crl_sp2_1",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox .crl_sp2_1", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "395c78f5-6063-47fc-bfd3-aa3c6600dc8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_flight_domestic_searchbox .crl_sp2_1",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox .crl_sp2_1", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93d82b7c-3414-41bf-b69d-e3875c313dc2",
+      "comment": "",
+      "command": "click",
+      "target": "id=js_domestic_fromdate",
+      "targets": [
+        ["id=js_domestic_fromdate", "id"],
+        ["name=fromDate", "name"],
+        ["css=.qunar-dp > #js_domestic_fromdate", "css:finder"],
+        ["xpath=//input[@id='js_domestic_fromdate']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45d6a75a-7de6-470d-94e9-fcd58fea852c",
+      "comment": "",
+      "command": "type",
+      "target": "id=js_domestic_fromdate",
+      "targets": [
+        ["id=js_domestic_fromdate", "id"],
+        ["name=fromDate", "name"],
+        ["css=.qunar-dp > #js_domestic_fromdate", "css:finder"],
+        ["xpath=//input[@id='js_domestic_fromdate']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "684d6fb6-17b3-4071-9fb3-fe42197e67d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.searchbox-flight > .con",
+      "targets": [
+        ["css=.searchbox-flight > .con", "css:finder"],
+        ["xpath=//div[@id='js_searchbox_flight']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fe476cb-6e8c-445c-915c-bf6b8b2984d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.crl_group:nth-child(4) .button-search",
+      "targets": [
+        ["css=.crl_group:nth-child(4) .button-search", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[3]/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa78ce16-7ca3-483c-9ffb-bfb626e04c2c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "343e8b4b-d467-4615-b96d-5d99b6cc010c",
+    "name": "单程，输入有效出发地点，无效到达地点",
+    "commands": [{
+      "id": "c74d3968-4fb3-4b7b-bb03-a23acec64d6c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6032fe6-9f7d-4ff3-9d91-2ab47386c643",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x910",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a54294a-5eea-4421-b95e-6d38a1668fb9",
+      "comment": "",
+      "command": "type",
+      "target": "name=fromCity",
+      "targets": [
+        ["name=fromCity", "name"],
+        ["css=.controls:nth-child(2) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='fromCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "长沙(CSX)"
+    }, {
+      "id": "0c20145b-f765-44e2-90f3-a4bd43482052",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_flight_domestic_searchbox .crl_sp2_1",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox .crl_sp2_1", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "245073c9-3d05-4865-885f-e442982682fd",
+      "comment": "",
+      "command": "click",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83b09f92-57eb-4a0e-8ca6-98f5196e3470",
+      "comment": "",
+      "command": "type",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "abxjshjcsk"
+    }, {
+      "id": "39210970-df43-4dda-8c96-8ba1b21dc8d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fromD > .qunar-dp",
+      "targets": [
+        ["css=.fromD > .qunar-dp", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d40058c4-d459-4a3b-a236-164e5d215756",
+      "comment": "",
+      "command": "type",
+      "target": "id=js_domestic_fromdate",
+      "targets": [
+        ["id=js_domestic_fromdate", "id"],
+        ["name=fromDate", "name"],
+        ["css=.qunar-dp > #js_domestic_fromdate", "css:finder"],
+        ["xpath=//input[@id='js_domestic_fromdate']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02128838-1b72-417b-b1ae-ce5c0742e3ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_flight_domestic_searchbox > .crl_group:nth-child(2) > .controls",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox > .crl_group:nth-child(2) > .controls", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f479927-1ffd-453d-b188-0ebaaa858799",
+      "comment": "",
+      "command": "click",
+      "target": "css=.crl_group:nth-child(4) .button-search",
+      "targets": [
+        ["css=.crl_group:nth-child(4) .button-search", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[3]/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04b66087-dbd9-4b25-bd5a-e41a6e6e4858",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "71d2d104-4f67-4232-816e-1ff0f23490a6",
+    "name": "单程，输入无效出发地点，输入有效到达地点",
+    "commands": [{
+      "id": "fc4ce0ca-71f0-400b-87a0-a9a741000064",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fc8ac3e-15c3-4f15-86d5-4fdafa5e6b92",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x910",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3315e7c-886b-4112-8cb9-64e6e59414e0",
+      "comment": "",
+      "command": "type",
+      "target": "name=fromCity",
+      "targets": [
+        ["name=fromCity", "name"],
+        ["css=.controls:nth-child(2) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='fromCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e8f9527-0f76-46e1-a234-8259e22abf8e",
+      "comment": "",
+      "command": "click",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "223ac486-6c8d-42a1-b519-c4868d025b2e",
+      "comment": "",
+      "command": "type",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39786ae3-69ff-445b-beb3-4d4240b9512e",
+      "comment": "",
+      "command": "click",
+      "target": "id=js_domestic_fromdate",
+      "targets": [
+        ["id=js_domestic_fromdate", "id"],
+        ["name=fromDate", "name"],
+        ["css=.qunar-dp > #js_domestic_fromdate", "css:finder"],
+        ["xpath=//input[@id='js_domestic_fromdate']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d41609b-0002-4994-a38a-6e98dd6ac0e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=js_domestic_fromdate",
+      "targets": [
+        ["id=js_domestic_fromdate", "id"],
+        ["name=fromDate", "name"],
+        ["css=.qunar-dp > #js_domestic_fromdate", "css:finder"],
+        ["xpath=//input[@id='js_domestic_fromdate']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c97e9eeb-233e-41a0-a273-3f1f69ae03ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_flight_domestic_searchbox > .crl_group:nth-child(2) > .controls",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox > .crl_group:nth-child(2) > .controls", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eeef32b1-1af4-4dcd-8788-0864265fe496",
+      "comment": "",
+      "command": "click",
+      "target": "css=.controls:nth-child(2) .qcbox-placeholder",
+      "targets": [
+        ["css=.controls:nth-child(2) .qcbox-placeholder", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43c16325-834c-46a1-9a22-16a64286cd37",
+      "comment": "",
+      "command": "type",
+      "target": "name=fromCity",
+      "targets": [
+        ["name=fromCity", "name"],
+        ["css=.controls:nth-child(2) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='fromCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "agshbdajd"
+    }, {
+      "id": "5a56d0bb-1070-4e75-b750-a926fb828fa0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.controls:nth-child(3) .qcbox-placeholder",
+      "targets": [
+        ["css=.controls:nth-child(3) .qcbox-placeholder", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f97c0e6e-e971-4a1d-ae4a-5b1a52f95639",
+      "comment": "",
+      "command": "type",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "法国"
+    }, {
+      "id": "5cf16c36-8ede-4344-a904-cded34946665",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.active > td",
+      "targets": [
+        ["css=.active > td", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div[2]/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,' 法国-该目的地为国家')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cf251d8-c1f1-4fd7-a456-83ddfbee2c92",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=#js_flight_domestic_searchbox .crl_sp2_1",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox .crl_sp2_1", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b0dda8f-c86d-4f55-8423-8abdf8e0fc8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_flight_domestic_searchbox .crl_sp2_1",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox .crl_sp2_1", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c361aa79-519d-4bab-b650-94356dae401f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.crl_group:nth-child(4) .button-search",
+      "targets": [
+        ["css=.crl_group:nth-child(4) .button-search", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[3]/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a890685e-b46b-44c9-b3c5-124018222f35",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "68c05d27-e4e4-4ac2-ae0d-53fe8a1f35c7",
+    "name": "单程，输入无效出发地点和无效到达地点",
+    "commands": [{
+      "id": "1d92f4a9-ef58-42b7-913a-685fe5c9f7f6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1bb9b92-7257-4ef7-a7b8-c0af44df57ab",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x910",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76a486f3-22a8-4f54-bca0-ed71ba91e13d",
+      "comment": "",
+      "command": "type",
+      "target": "name=fromCity",
+      "targets": [
+        ["name=fromCity", "name"],
+        ["css=.controls:nth-child(2) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='fromCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31fa3ece-92e7-4c02-92f0-360cf6381d29",
+      "comment": "",
+      "command": "click",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "135f8c43-e85c-46d9-b5fe-cbf04e6897b4",
+      "comment": "",
+      "command": "type",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "672e6cf9-96b1-44f7-90a9-03fd23899e38",
+      "comment": "",
+      "command": "click",
+      "target": "id=js_domestic_fromdate",
+      "targets": [
+        ["id=js_domestic_fromdate", "id"],
+        ["name=fromDate", "name"],
+        ["css=.qunar-dp > #js_domestic_fromdate", "css:finder"],
+        ["xpath=//input[@id='js_domestic_fromdate']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8be952df-932b-4896-ad85-6a7d224216a8",
+      "comment": "",
+      "command": "type",
+      "target": "id=js_domestic_fromdate",
+      "targets": [
+        ["id=js_domestic_fromdate", "id"],
+        ["name=fromDate", "name"],
+        ["css=.qunar-dp > #js_domestic_fromdate", "css:finder"],
+        ["xpath=//input[@id='js_domestic_fromdate']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d70e3ab-85a4-4e2c-a747-1b40398c775d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_flight_domestic_searchbox > .crl_group:nth-child(2) > .controls",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox > .crl_group:nth-child(2) > .controls", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3821d99a-3cb2-4fdf-b106-d65834139845",
+      "comment": "",
+      "command": "click",
+      "target": "css=.controls:nth-child(2) .qcbox-placeholder",
+      "targets": [
+        ["css=.controls:nth-child(2) .qcbox-placeholder", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee49cc57-8ced-4968-aa2f-20ccccc473c6",
+      "comment": "",
+      "command": "type",
+      "target": "name=fromCity",
+      "targets": [
+        ["name=fromCity", "name"],
+        ["css=.controls:nth-child(2) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='fromCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "asbhcjxas"
+    }, {
+      "id": "1d61c1c7-8fd2-41da-978c-2c9821d3f53e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.controls:nth-child(3) .qcbox-placeholder",
+      "targets": [
+        ["css=.controls:nth-child(3) .qcbox-placeholder", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3ce2f81-69b6-4769-a659-b46c30562c40",
+      "comment": "",
+      "command": "type",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "suaghjkfcas"
+    }, {
+      "id": "67d93bf2-9b35-45e0-a1b9-f8641f186770",
+      "comment": "",
+      "command": "click",
+      "target": "css=.crl_group:nth-child(4) .button-search",
+      "targets": [
+        ["css=.crl_group:nth-child(4) .button-search", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[3]/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30bda1e2-8728-43af-82fd-b4a3e6885d78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.crl_group:nth-child(4) .button-search",
+      "targets": [
+        ["css=.crl_group:nth-child(4) .button-search", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[3]/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc77502b-f570-4c0a-9c83-ee73fa6bba1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.crl_group:nth-child(4) .button-search",
+      "targets": [
+        ["css=.crl_group:nth-child(4) .button-search", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[3]/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "620f4694-730d-42f7-9a33-529c078fbdcf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6b95f64e-0eac-4c22-84b7-dabcab4e3797",
+    "name": "往返，输入有效出发地点，有效到达地点",
+    "commands": [{
+      "id": "deed688f-f391-45b5-81be-7ed8d259d8a4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c5a0257-0767-4470-95c2-f944a9040df8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x910",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4e111fc-6568-4fb9-b88d-536bf908f439",
+      "comment": "",
+      "command": "click",
+      "target": "id=js_searchtype_oneway",
+      "targets": [
+        ["id=js_searchtype_oneway", "id"],
+        ["name=searchType", "name"],
+        ["css=#js_searchtype_oneway", "css:finder"],
+        ["xpath=//input[@id='js_searchtype_oneway']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7717e078-2397-43a4-83b2-0de2ad36cadd",
+      "comment": "",
+      "command": "click",
+      "target": "id=js_searchtype_roundtrip",
+      "targets": [
+        ["id=js_searchtype_roundtrip", "id"],
+        ["css=#js_searchtype_roundtrip", "css:finder"],
+        ["xpath=//input[@id='js_searchtype_roundtrip']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div/div/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55d488af-3972-46b9-9d5c-ffc0c671b5e9",
+      "comment": "",
+      "command": "click",
+      "target": "name=fromCity",
+      "targets": [
+        ["name=fromCity", "name"],
+        ["css=.controls:nth-child(2) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='fromCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c63c4720-4ea9-4a00-ad8f-99519ca43e94",
+      "comment": "",
+      "command": "type",
+      "target": "name=fromCity",
+      "targets": [
+        ["name=fromCity", "name"],
+        ["css=.controls:nth-child(2) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='fromCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "长沙(CSX)"
+    }, {
+      "id": "71d95963-0b62-499e-8ae3-8bc9ca616688",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.active > td",
+      "targets": [
+        ["css=.active > td", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div/div/div[2]/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'城市 长沙 CSX 中国')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b9ab7e5-1da0-4afb-b738-f2bdc2c5ce99",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=#js_flight_domestic_searchbox .crl_sp2_1",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox .crl_sp2_1", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc94409f-5064-42e8-9e26-a8fbf5ab9dbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_flight_domestic_searchbox .crl_sp2_1",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox .crl_sp2_1", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07cca6e5-79fb-4f3d-a990-5c0d286b18a7",
+      "comment": "",
+      "command": "click",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "184d69de-6e62-4393-a040-bc26184e5544",
+      "comment": "",
+      "command": "type",
+      "target": "name=toCity",
+      "targets": [
+        ["name=toCity", "name"],
+        ["css=.controls:nth-child(3) .cinput:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='toCity']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "南京(NKG)"
+    }, {
+      "id": "d3cef6b0-3de9-45c9-9d2f-5df693b75eb4",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.controls:nth-child(3) .active > td",
+      "targets": [
+        ["css=.controls:nth-child(3) .active > td", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div/div[2]/div/div[2]/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/table/tbody/tr/td", "xpath:position"],
+        ["xpath=//td[contains(.,'城市 南京 NKG 中国')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6c473b2-1686-4c35-bfcd-b62d1fda6ccb",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=#js_flight_domestic_searchbox .crl_sp2_1",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox .crl_sp2_1", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd02e876-f5b4-4694-bb2d-64f622f69d7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_flight_domestic_searchbox .crl_sp2_1",
+      "targets": [
+        ["css=#js_flight_domestic_searchbox .crl_sp2_1", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b87e812-34fc-4bbb-851a-b02de440e32d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fromD > .qunar-dp",
+      "targets": [
+        ["css=.fromD > .qunar-dp", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ac8acff-229e-4f04-a217-aa3210cf2a7a",
+      "comment": "",
+      "command": "type",
+      "target": "id=js_domestic_fromdate",
+      "targets": [
+        ["id=js_domestic_fromdate", "id"],
+        ["name=fromDate", "name"],
+        ["css=.qunar-dp > #js_domestic_fromdate", "css:finder"],
+        ["xpath=//input[@id='js_domestic_fromdate']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bff294af-9c07-411b-a3e2-c8bd6cd0fed4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.searchbox-flight > .con",
+      "targets": [
+        ["css=.searchbox-flight > .con", "css:finder"],
+        ["xpath=//div[@id='js_searchbox_flight']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bfa35fe-f54b-4304-ae9b-571d56ebd666",
+      "comment": "",
+      "command": "click",
+      "target": "css=.qcbox_on > .qunar-dp",
+      "targets": [
+        ["css=.qcbox_on > .qunar-dp", "css:finder"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div[2]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d41125b-f556-453f-b59a-97535fa3a5da",
+      "comment": "",
+      "command": "type",
+      "target": "id=js_domestic_todate",
+      "targets": [
+        ["id=js_domestic_todate", "id"],
+        ["name=toDate", "name"],
+        ["css=.qunar-dp > #js_domestic_todate", "css:finder"],
+        ["xpath=//input[@id='js_domestic_todate']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[2]/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b19e6f3c-3c06-4260-b1d0-ed666157bd12",
+      "comment": "",
+      "command": "click",
+      "target": "css=.searchbox-flight > .con",
+      "targets": [
+        ["css=.searchbox-flight > .con", "css:finder"],
+        ["xpath=//div[@id='js_searchbox_flight']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8dbba59-0d59-4574-90ce-61bbe3ec7d0b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.crl_group:nth-child(4) .button-search",
+      "targets": [
+        ["css=.crl_group:nth-child(4) .button-search", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='js_flight_domestic_searchbox']/div[3]/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2de6e632-200d-48fa-865c-cca5145d91ac",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e110a721-2a07-46f1-87a6-13fc11cb37b7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.qunar.com/"],
+  "plugins": []
+}
